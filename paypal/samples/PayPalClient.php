@@ -28,8 +28,8 @@ class PayPalClient
      */
     public static function environment()
     {
-        $clientId = getenv("CLIENT_ID") ?: "<<PAYPAL-CLIENT-ID>>";
-        $clientSecret = getenv("CLIENT_SECRET") ?: "<<PAYPAL-CLIENT-SECRET>>";
+        $clientId = getenv("CLIENT_ID") ?: "ASFNaJyUXs4X3RRLno3UIuQP85pFyPv0sr9BMJr8kV9ER-tRKs7ZqAtjIOjf3LRcBFw0R68gAo7fmULG";
+        $clientSecret = getenv("CLIENT_SECRET") ?: "EFF4fxE5aPWyj0kR91S1wjdSesqMjJIGmFURwO9vAey4GAkdukQgIc5eKNtAdKe8C9bpEcct7TUAKYLx";
         return new SandboxEnvironment($clientId, $clientSecret);
     }
 }
